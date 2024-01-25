@@ -10,7 +10,7 @@ def bubble_sort(a_list):
             
 def bubble_sort_short(a_list):
     for i in range(len(a_list) - 1, 0, -1):
-        exchanges = False
+        exchange = False
         for j in range(i):
             if a_list[j] > a_list[j+1]:
                 exchange = True
@@ -30,6 +30,7 @@ def selection_sort(a_list):
             a_list[min_], a_list[i] = a_list[i], a_list[min_]
 
 def insertion_sort(a_list):
+    # O(n^2)
     # maintain sorted sub array
     # insert each item into sorted array
     for i in range(1, len(a_list)):
