@@ -1,4 +1,4 @@
-from linked_lists import Node
+from linear_structures.linked_lists import Node
     
 class OrderedList:
     def __init__(self):
